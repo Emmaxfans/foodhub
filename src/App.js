@@ -1,30 +1,34 @@
 import './App.css';
+import FunctionalComponent, {FunctionalComponent1} from './components/FunctionalComponent';
+// import FunctionalComponent from './components/FunctionalComponent';
 
 function App() {
   return (
-
     // body
 
     <div className="App">
-
+      
       <div>
       <nav className="navbar navbar-expand-lg navbar-light">
   <div className="container-fluid">
-    <a className="navbar-brand text-white" href="/#">FOOD HUB</a>
+    <a className="navbar-brand text-white" href="/#">   
+     <img className='img1a img-fluid' src='.\foodhub\bibimbap.png' alt='foodhub1'/>
+    <h5 className='foodhub'>FOODHUB</h5>
+    </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
 
-    <div className="collapse navbar-collapse nav-float " id="navbarNav">
+    <div className="collapse navbar-collapse nav-float" id="navbarNav">
       <ul className="navbar-nav">
         <li className="nav-item px-3">
-          <a className="nav-link active text-white" aria-current="page" href="/#">Home</a>
+          <a className="nav-link active text-white fs-4" aria-current="page" href="/#">Home</a>
         </li>
         <li className="nav-item px-3">
-          <a className="nav-link text-white" href="/#">Login</a>
+          <a className="nav-link text-white fs-4" href="/#">Login</a>
         </li>
         <li className="nav-item px-3">
-          <a className="nav-link text-white" href="/#">Sign Up</a>
+          <a className="nav-link text-white" href="/#"><FunctionalComponent1/></a>
         </li>
       </ul>
     </div>
@@ -41,7 +45,7 @@ function App() {
     <div className="col-6 con-2">
       <div className='col-margin'>
       <h3 className='con-h1'>Order food anytime, <br/> anywhere</h3>
-      <p className='con-p1'>Browse from list of our special food to place order and have food <br/>delivered to you in no time. Affordable, tasty and fast.</p>
+      <p className='con-p1'>Browse from list of our special food to place order <br className='br2'/>and have food <br className='br3'/>delivered to you in no time. <br className='br2'/>Affordable, tasty and fast.</p>
       </div>
       
     </div>
@@ -103,9 +107,25 @@ function App() {
       
     </div>
     
-    <div class="col-6">
+    <div class="col-6 func-con">
+      {/* <span>
+      <input className='input-pro' aria-details='' placeholder='SEARCH BOX'/>
+      <input class="input-pro" type="search" placeholder="Search" aria-label="Search"></input><FunctionalComponent />
+      </span> */}
+
+  <div class="">
+    <form class="d-flex">
+      <input class="form-control input-pro" type="search" placeholder="Search" aria-label="Search"/>
+
+      <FunctionalComponent />
+
+      {/* <button class="btn btn-outline-success" type="submit">Search</button> */}
+    </form>
+  </div>
+  
+      
     </div>
-    {/* <button className='btn btn-primary'>Get Notified</button> */}
+
   </div>
 
   </div>
@@ -162,7 +182,7 @@ function App() {
     </div>
     
     <div class="col-6">
-      <div className='mt-3 icon-margin'>
+      <div className='icon-margin'>
       <a className="" href="/#"><img className='img3 img-fluid' src='.\foodhub\instagram (4).png' alt='ig'/></a>
       <a className="" href="/#"><img className='img4 img-fluid' src='.\foodhub\twitter (1).png' alt='ig'/></a>
       <a className="" href="/#"><img className='img4 img-fluid' src='.\foodhub\facebook (2).png' alt='ig'/></a>
