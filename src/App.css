@@ -183,6 +183,7 @@ border-radius: 400px;
   width: 180px;
   height: 51px;
   border: none;
+  color: #000000;
   margin-left: 5px;
 }
 
@@ -446,7 +447,7 @@ border-radius: 400px;
       height: 30px;
       border: none;
       margin-left: -5px;
-      font-size: 18px;
+      font-size: 15px;
       font-weight: 200;
       /* margin-top: -1px; */
     }
