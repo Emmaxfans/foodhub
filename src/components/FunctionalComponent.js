@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from './Button'
 import Button1 from './Button1'
+import Buttonapp from './Buttonapp'
 
 export const FunctionalComponent = () => {
   return (
@@ -19,5 +20,15 @@ function FunctionalComponent1(){
     </>
   )
 }
+
+function FunctionalComponent2(){
+  return (
+    <>
+      <Buttonapp/>
+      {/* <Buttonapp props="Apple"/> */}
+    </>
+  )
+}
+
 export default FunctionalComponent
-export {FunctionalComponent1}
+export {FunctionalComponent1, FunctionalComponent2}

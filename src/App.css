@@ -178,6 +178,34 @@ border-radius: 400px;
   margin-left: 5px;
 }
 
+.button3{
+  background: #928f8f;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  margin-left: 5px;
+  color: #ffffff;
+  /* margin-top: -1px; */
+}
+
+.app-btn{
+  height: 25px;
+  padding: 0px 5px 0px 0px;
+  
+}
+
+.app-btn1{
+  height: 25px;
+  padding: 0px 7px 0px 0px;
+  
+}
+
+/* .button3 p{
+  font-size: 2px;
+  display: inline;
+} */
+
 .func-con{
  /* display: inline; */
  margin-top: 20px;
@@ -203,14 +231,14 @@ border-radius: 400px;
   } */
 
   .con-1{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   .img1{
     height: 130px;
     width: 130px;
-    margin-left: 5px;
+    margin-left: -5px;
     margin-top: -45px;
     border-radius: 100px;
     
@@ -234,8 +262,8 @@ border-radius: 400px;
 
     .con-h1{
       color: #ffff;
-      font-weight: 300;
-      font-size: 32px;
+      font-weight: 400;
+      font-size: 23px;
     }
     
     .con-p1{
@@ -252,7 +280,8 @@ border-radius: 400px;
     
     .p2{
       color: #FFFFFFBD;
-      font-size: 12px;
+      font-size: 10px;
+      padding: 0px 30px;
     }
 
     .center-margin{
@@ -337,7 +366,7 @@ border-radius: 400px;
     }
 
     .input-pro{
-      width: 110px;
+      width: 90px;
       height: 21px;
 
       border-radius: 5px;
@@ -347,8 +376,8 @@ border-radius: 400px;
     .button2{
       background: #FBDDBB;
       border-radius: 5px;
-      width: 70px;
-      font-size: 10px;
+      width: 80px;
+      font-size: 8px;
       font-weight: 400;
       height: 21px;
       border: none;

@@ -1,5 +1,5 @@
 import './App.css';
-import FunctionalComponent, {FunctionalComponent1} from './components/FunctionalComponent';
+import FunctionalComponent, {FunctionalComponent1, FunctionalComponent2} from './components/FunctionalComponent';
 // import FunctionalComponent from './components/FunctionalComponent';
 
 function App() {
@@ -45,7 +45,8 @@ function App() {
     <div className="col-6 con-2">
       <div className='col-margin'>
       <h3 className='con-h1'>Order food anytime, <br/> anywhere</h3>
-      <p className='con-p1'>Browse from list of our special food to place order <br className='br2'/>and have food <br className='br3'/>delivered to you in no time. <br className='br2'/>Affordable, tasty and fast.</p>
+      <p className='con-p1'>Browse from list of our special food to place order and have food delivered to you in no time. Affordable, tasty and fast.</p>
+      <FunctionalComponent2 />
       </div>
       
     </div>
@@ -62,6 +63,7 @@ function App() {
       Special Meal Of The Day
     </header>
     <p className='p2'>Check our special meal of the day and get discounts on all our meals <br/> and swift delivery to whatever location within Abeokuta.</p>
+    
   </center>
 
   <div className="container">
@@ -108,18 +110,12 @@ function App() {
     </div>
     
     <div class="col-6 func-con">
-      {/* <span>
-      <input className='input-pro' aria-details='' placeholder='SEARCH BOX'/>
-      <input class="input-pro" type="search" placeholder="Search" aria-label="Search"></input><FunctionalComponent />
-      </span> */}
 
   <div class="">
     <form class="d-flex">
       <input class="form-control input-pro" type="search" placeholder="Search" aria-label="Search"/>
 
       <FunctionalComponent />
-
-      {/* <button class="btn btn-outline-success" type="submit">Search</button> */}
     </form>
   </div>
   
@@ -153,7 +149,7 @@ function App() {
       <td>About</td>
       <td>Help Center</td>
       <td>Cookies Policy</td>
-      <td></td>
+      {/* <td><FunctionalComponent2 /></td> */}
     </tr>
     <tr>
       <td>Career</td>
