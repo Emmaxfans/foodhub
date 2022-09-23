@@ -172,7 +172,7 @@ Special Meal Of The Day
 <div className="row">
 
 <div className="col-6">
-<p className='px-3 mt-3 pxp'>2022 FOODHUB, All right reserved</p>
+<p className='px-3 pxp'>2022 FOODHUB, All right reserved</p>
 </div>
 
 <div class="col-6">
