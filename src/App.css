@@ -463,9 +463,13 @@ border-radius: 400px;
       /* margin-top: -1px; */
     }
 
+    .button3 p{
+      font-size: 10px;
+    }
+
     .icon-apple{
       margin-right: 12px;
-      font-size: 15px;
+      font-size: 10px;
     }
     
   
