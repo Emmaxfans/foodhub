@@ -140,7 +140,7 @@ function App() {
       <th scope="col" className=''>Company</th>
       <th scope="col">Support</th>
       <th scope="col">Legal</th>
-      <th scope="col">Install App</th>
+      <th scope="col"></th>
     </tr>
   </thead>
   
@@ -161,7 +161,7 @@ function App() {
       <td>Thornton</td>
       <td>Thornton</td>
       <td>Thornton</td>
-      <td>@twitter</td>
+      <td></td>
     </tr>
   </tbody>
 </table>

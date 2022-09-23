@@ -1,7 +1,55 @@
+.container1{
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
 .login-con1{
     width: 50%;
 }
 
+.login-con2{
+padding: 200px 80px 0px 80px;
+}
+
 .login-img{
     height: 100%;
+    width: 100%;
+    /* max-width: fit-content; */
 }
+
+.input-con{
+    padding-bottom: 40px;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 40px;
+    font-weight: 400;
+    color: #00302E;
+    ;
+}
+
+.btn-button1{
+    width: 500px;
+}
+
+.pass{
+    display: inline;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 680px) {
+    .btn-button1{
+        width: 300px;
+    }  
+
+    .login-con2{
+        padding: 50px 80px 0px 80px;
+        }
+    
+    }

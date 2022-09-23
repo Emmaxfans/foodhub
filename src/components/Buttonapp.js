@@ -5,10 +5,8 @@ export default function Buttonapp ({props}) {
   return (
 
     <span className=''>
-        {/* <img src='' alt='App-button'/> */}
-        <button className='button3'><img className='app-btn' src='.\foodhub\playstore (1).png' alt='App'/>Playstore</button>
-        {/* <br className='brbr'/> */}
-        <button className='button3'><img className='app-btn1' src='.\foodhub\apple (1).png' alt='App'/>App Store</button>
+        <a href='/#'><button className='button3'><i class="fa-brands fa-google-play icon-apple"></i><p>Playstore</p></button></a>
+        <a href='/#'><button className='button3'><i className="fa-brands fa-apple icon-apple" ></i><p>App Store</p></button></a>
     </span>
     
   )
