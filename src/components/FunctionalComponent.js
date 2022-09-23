@@ -30,5 +30,14 @@ function FunctionalComponent2(){
   )
 }
 
+function FunctionalComponent3(){
+  return (
+    <>
+      <Buttonapp/>
+      {/* <Buttonapp props="Apple"/> */}
+    </>
+  )
+}
+
 export default FunctionalComponent
-export {FunctionalComponent1, FunctionalComponent2}
+export {FunctionalComponent1, FunctionalComponent2, FunctionalComponent3 }

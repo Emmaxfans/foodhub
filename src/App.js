@@ -1,5 +1,5 @@
 import './App.css';
-import FunctionalComponent, {FunctionalComponent1, FunctionalComponent2} from './components/FunctionalComponent';
+import FunctionalComponent, {FunctionalComponent1, FunctionalComponent2, FunctionalComponent3} from './components/FunctionalComponent';
 // import FunctionalComponent from './components/FunctionalComponent';
 
 function App() {
@@ -149,7 +149,7 @@ function App() {
       <td>About</td>
       <td>Help Center</td>
       <td>Cookies Policy</td>
-      {/* <td><FunctionalComponent2 /></td> */}
+      <td><FunctionalComponent3 /></td>
     </tr>
     <tr>
       <td>Career</td>

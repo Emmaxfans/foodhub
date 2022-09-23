@@ -224,6 +224,10 @@ border-radius: 400px;
   display: none;
 }
 
+.brbr{
+  display: none;
+}
+
 @media screen and (max-width: 680px) {
 /* 
   .App{
@@ -405,6 +409,27 @@ border-radius: 400px;
 
     .br3{
       display: none;
+    }
+
+    .app-btn{
+      height: 20px;
+      padding: 0px 5px 0px 0px;
+      
+    }
+    .app-btn1{
+      height: 20px;
+      padding: 0px 5px 0px 0px; 
+    }
+
+    .button3{
+      background: #928f8f;
+      border-radius: 5px;
+      width: 120px;
+      height: 30px;
+      border: none;
+      margin-left: 2px;
+      color: #ffffff;
+      /* margin-top: -1px; */
     }
     
   
