@@ -442,13 +442,14 @@ border-radius: 400px;
 
     .button1{
       background: #FBDDBB;
+      color: #000000;
       border-radius: 0px;
       width: 80px;
       height: 30px;
       border: none;
       margin-left: -5px;
       font-size: 13px;
-      font-weight: 200;
+      font-weight: 400;
       /* margin-top: -1px; */
     }
 
