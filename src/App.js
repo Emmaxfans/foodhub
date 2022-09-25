@@ -1,10 +1,33 @@
 import './App.css';
+
 import FunctionalComponent, {FunctionalComponent1, FunctionalComponent2, FunctionalComponent3} from './components/FunctionalComponent';
+
+// import { Route, Routes, Link } from "react-router-dom";
+// import Home from './Home';
+// import About from './components/About';
+// import Contact from './components/Contact';
+
 // import FunctionalComponent from './components/FunctionalComponent';
 
 function App() {
   return (
-<div className="App">
+
+    // <div className=''>
+
+    //   <Link to='/'> <button> Home </button> </Link>
+    //   <Link to='/about'> <button>About</button> </Link>
+    //   <Link to='/contact'><button> Contact </button> </Link>
+
+    //   <Routes>
+    //     <Route path='/' element={<Home />} />
+    //     <Route path='/about' element={<About />} />
+    //     <Route path='/contact' element={<Contact />} />
+    //   </Routes>
+
+    //   </div>
+
+
+    <div className="App">
       
 <div>
 <nav className="navbar navbar-expand-lg navbar-light">
@@ -134,33 +157,35 @@ Special Meal Of The Day
 
 <table className="table table table-borderless text-center text-white">
 <thead className="">
-<tr >
+<tr cl>
 <th scope="col" className=''>Company</th>
 <th scope="col">Support</th>
 <th scope="col">Legal</th>
-<th scope="col"></th>
+<th scope="col">Install App</th>
 </tr>
 </thead>
 
 <tbody>
-<tr>
-<td>About</td>
+<tr className='td-fontsize' >
+<td>About foodhub</td>
 <td>Help Center</td>
 <td>Cookies Policy</td>
-<td><FunctionalComponent3 /></td>
+<td rowspan="2"><FunctionalComponent3 /></td>
 </tr>
-<tr>
-<td>Career</td>
+
+<tr className='td-fontsize'>
+<td>Foodhub Career</td>
 <td>Safety Center</td>
 <td>Privacy Policy</td>
-<td></td>
 </tr>
-<tr>
+
+{/* <tr>
 <td>Thornton</td>
 <td>Thornton</td>
 <td>Thornton</td>
 <td></td>
-</tr>
+</tr> */}
+
 </tbody>
 </table>
 
@@ -190,9 +215,6 @@ Special Meal Of The Day
 </div>
 
 </div>
-
-    
-
 
   );
 }

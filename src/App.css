@@ -472,6 +472,10 @@ border-radius: 400px;
       margin-right: 12px;
       font-size: 10px;
     }
+
+    .td-fontsize{
+      font-size: 12px;
+    }
     
   
 }
