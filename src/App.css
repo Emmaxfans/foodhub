@@ -247,6 +247,15 @@ border-radius: 400px;
   font-size: 18px;
 }
 
+.signup2{
+  display: none;
+}
+
+.fs-font{
+  color: #ffffff;
+  font-size: 25px;
+}
+
 @media screen and (max-width: 680px) {
 /* 
   .App{
@@ -441,6 +450,7 @@ border-radius: 400px;
     }
 
     .button1{
+      display: none;
       background: #FBDDBB;
       color: #000000;
       border-radius: 0px;
@@ -477,7 +487,18 @@ border-radius: 400px;
     .td-fontsize{
       font-size: 12px;
     }
+
+    .signup2{
+      display: block;
+      /* font-size: 15px; */
+    }
     
+    .fs-font{
+      color: #ffffff;
+      font-size: 20px;
+      padding: 1px 0px 0px 0px;
+      align-content: left;
+    }
   
 }
 

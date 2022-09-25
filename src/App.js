@@ -43,14 +43,21 @@ function App() {
 <div className="collapse navbar-collapse nav-float" id="navbarNav">
 <ul className="navbar-nav">
   <li className="nav-item px-3">
-    <a className="nav-link active text-white fs-4" aria-current="page" href="./#">Home</a>
+    <a className="nav-link active text-white fs-font" aria-current="page" href="./#">Home</a>
   </li>
   <li className="nav-item px-3">
-    <a className="nav-link text-white fs-4" href="/#">Login</a>
+    <a className="nav-link fs-font" href="/#">Login</a>
   </li>
+
+  <li className="nav-item px-3 signup2">
+    <a className="nav-link fs-font " href="/#">Sign Up</a>
+  </li>
+
   <li className="nav-item px-3">
     <a className="nav-link text-white" href="/#"><FunctionalComponent1/></a>
   </li>
+
+ 
 </ul>
 </div>
 </div>
