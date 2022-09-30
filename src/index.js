@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
-import Orderpage1 from './components/Orderpage1';
+// import Orderpage1 from './components/Orderpage1';
 // import Loginsignup from "./components/Loginpage"
 // import signup from './components/Signup';
 // import Style from './components/Style';
@@ -23,7 +23,7 @@ root.render(
     {/* <Loginsignup /> */}
     {/* <Signup /> */}
     {/* <Style /> */}
-     <Orderpage1 />
+     {/* <Orderpage1 /> */}
     
     </Router>
  
