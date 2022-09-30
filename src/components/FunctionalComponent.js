@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button'
 import Button1 from './Button1'
 import Buttonapp from './Buttonapp'
+import OrderRow from './OrderRow'
 
 export const FunctionalComponent = () => {
   return (
@@ -39,5 +40,37 @@ function FunctionalComponent3(){
   )
 }
 
+function FunctionalComponent4(){
+  return (
+    <>
+    
+     <OrderRow props={"ROW1"} />
+     
+     {/* <OrderRow props="ROW2" />
+     <OrderRow props="ROW3" /> */}
+    </>
+  )
+}
+
+function FunctionalComponent5(){
+  return (
+    <>
+     {/* <OrderRow props="ROW1"/> */}
+     <OrderRow props="ROW2" />
+     {/* <OrderRow props="ROW3" /> */}
+    </>
+  )
+}
+
+function FunctionalComponent6(){
+  return (
+    <>
+     {/* <OrderRow props="ROW1"/> */}
+     {/* <OrderRow props="ROW2" /> */}
+     <OrderRow props="ROW3" />
+    </>
+  )
+}
+
 export default FunctionalComponent
-export {FunctionalComponent1, FunctionalComponent2, FunctionalComponent3 }
+export {FunctionalComponent1, FunctionalComponent2, FunctionalComponent3, FunctionalComponent4, FunctionalComponent5, FunctionalComponent6 }

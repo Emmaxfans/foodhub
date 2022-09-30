@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from "react-router-dom";
 import './index.css';
+import Orderpage1 from './components/Orderpage1';
 // import Loginsignup from "./components/Loginpage"
 // import signup from './components/Signup';
 // import Style from './components/Style';
-import App from './App';
+// import App from './App';
 
 // import { Router } from 'react-router-dom';
 
@@ -18,13 +19,16 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-    <App />
+    {/* <App /> */}
+    {/* <Loginsignup /> */}
+    {/* <Signup /> */}
     {/* <Style /> */}
+     <Orderpage1 />
+    
     </Router>
  
 
-    {/* <Loginsignup /> */}
-    {/* <Signup /> */}
+    
     
 
 

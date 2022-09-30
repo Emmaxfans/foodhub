@@ -26,8 +26,7 @@ function App() {
 
     //   </div>
 
-
-    <div className="App">
+<div className="App">
       
 <div>
 <nav className="navbar navbar-expand-lg navbar-light">
