@@ -1,5 +1,3 @@
-import { parsePath } from "react-router-dom"
-
 const data = [
     {
         img : "foodhub/bibimbap.png",

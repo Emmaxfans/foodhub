@@ -27,31 +27,31 @@ export default function Orderpage1 () {
     <ul className="nav flex-column mb-auto ul-margin">
       <li className="nav-item">
         <a href="/#" className="nav-link text-dark">
-          <svg class="bi pe-none me-2" style={{width:"16", height:"16"}}></svg>
+          {/* <svg class="bi pe-none me-2" style={{width:"16", height:"16"}}></svg> */}
           Home
         </a>
       </li>
       <li>
         <a href="/#" className="nav-link  text-dark">
-          <svg className="bi pe-none me-2" style={{width:"16", height:"16"}}></svg>
+          {/* <svg className="bi pe-none me-2" style={{width:"16", height:"16"}}></svg> */}
           Dashboard
         </a>
       </li>
       <li>
         <a href="/#" className="nav-link text-dark">
-          <svg className="bi pe-none me-2" style={{width:"16", height:"16"}}></svg>
+          {/* <svg className="bi pe-none me-2" style={{width:"16", height:"16"}}></svg> */}
           Orders
         </a>
       </li>
       <li>
         <a href="/#" className="nav-link text-dark">
-          <svg className="bi pe-none me-2" style={{width:"16", height:"16"}}></svg>
+          {/* <svg className="bi pe-none me-2" style={{width:"16", height:"16"}}></svg> */}
           Products
         </a>
       </li>
       <li>
         <a href="/#" className="nav-link text-dark">
-          <svg className="bi pe-none me-2" style={{width:"16", height:"16"}}></svg>
+          {/* <svg className="bi pe-none me-2" style={{width:"16", height:"16"}}></svg> */}
           Customers
         </a>
       </li>

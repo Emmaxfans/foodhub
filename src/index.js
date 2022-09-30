@@ -23,7 +23,7 @@ root.render(
     {/* <Loginsignup /> */}
     {/* <Signup /> */}
     {/* <Style /> */}
-     <Orderpage1 />
+    <Orderpage1/>
     
     </Router>
  
