@@ -38,7 +38,7 @@
 }
 
 .con-1{
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .img1ab{
@@ -268,6 +268,7 @@ border-radius: 400px;
   }
 
   .img1ab{
+    display: inline-block;
     height: 130px;
     width: 130px;
     margin-left: -5px;

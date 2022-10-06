@@ -1,3 +1,11 @@
+body{
+    margin: 0;
+}
+
+.row-con{
+    padding-left: 0;
+    padding-right: 0;
+}
 .container1{
     padding-left: 0;
     padding-right: 0;

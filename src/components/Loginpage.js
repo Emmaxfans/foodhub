@@ -12,10 +12,10 @@ export default function Loginpage () {
 
 
   return (
-   
-      <div className='row'>
+   <div className='container1'>
+      <div className='row row-con'>
         <div className='col-lg-6'>
-        <img className='login-img'  src='..\foodhub\Group 13.png' alt=''/>
+        <img className='login-img'  src='..\foodhub\Group 13.png' alt='Loginpage'/>
         </div>
 
       <div className='col-lg-6'>
@@ -45,6 +45,7 @@ export default function Loginpage () {
 </div>
       </div>
     </div>
+  </div>
   </div>
    
     
