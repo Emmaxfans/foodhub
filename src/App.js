@@ -79,7 +79,7 @@ function App() {
 </div>
 
 <div class="col-6 con-img">
-<img className='img1 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 1.png' alt='foodhub1'/>
+<img className='img1a img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 1.png' alt='foodhub1'/>
 </div>
 </div>
 
