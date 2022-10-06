@@ -79,7 +79,9 @@ Special Meal Of The Day
 <div className="container">
 <div className="row align-items-start text-primary">
 <div className="col">
+<Link to='Order'>
 <img className='img2 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 2.png' alt='foodhub2'/>
+</Link>
 <div className='con-center'>
 <h3>Stir fry pasta</h3>
 <p>Stir fry pasta yadaa yadaa</p>
@@ -88,14 +90,18 @@ Special Meal Of The Day
 </div>
 
 <div class="col">
+<Link to='Order'>
 <img className='img2 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 3.png' alt='foodhub2'/>
+</Link>
 <div className='con-center'>
 <h3>Stir fry pasta</h3>
 <p>Stir fry pasta yadaa yadaa</p>
 </div>
 </div>
 <div className="col">
+<Link to='Order'>
 <img className='img2 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 4.png' alt='foodhub2'/>
+</Link>
 <div className='con-center'>
 <h3>Stir fry pasta</h3>
 <p>Stir fry pasta yadaa yadaa</p>

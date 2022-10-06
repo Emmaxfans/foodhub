@@ -13,7 +13,6 @@ export default function Orderpage1 () {
   })
 
   return (
-
     <div className='con-body'>
 
     <div className="d-flex flex-column flex-shrink-0 p-3 position-fixed con1" >
