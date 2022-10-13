@@ -61,7 +61,7 @@ export default function LandingPage() {
 </div>
 
 <div class="col-lg-6 md-6 sm-6 con-img">
-<img className='img1a img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 1.png' alt='foodhub1'/>
+<img className='img111 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 1.png' alt='foodhub1'/>
 </div>
 
 </div>

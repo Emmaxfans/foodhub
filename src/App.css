@@ -50,6 +50,13 @@ border-radius: 400px;
 
 }
 
+.img111{
+  max-width: 60%;
+  /* float: right; */
+  margin-left: 180px;
+  margin-top: -30px;
+}
+
 .img2{
 height: 250px;
 width: 250px;
@@ -265,6 +272,13 @@ border-radius: 400px;
   .con-1{
     margin-top: 80px;
     margin-bottom: 80px;
+  }
+
+  .img111{
+    max-width: 80%;
+    /* float: right; */
+    margin-left: 3px;
+    margin-top: -20px;
   }
 
   .img1ab{
