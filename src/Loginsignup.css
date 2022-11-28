@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    height: 100vh;
 }
 
 .row-con{
@@ -12,22 +13,50 @@ body{
     overflow: hidden;
 }
 
-.login-con1{
-    width: 50%;
+.login-con2{
+    display: block;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.login-con2{
-padding: 200px 80px 0px 80px;
+.login-form{
+    display: block;
+    justify-content: center;
 }
 
 .login-img{
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    /* max-width: fit-content; */
 }
 
 .input-con{
     padding-bottom: 40px;
+}
+
+.fa-eye-slash{
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -25px;
+    font-size:15px;
+    cursor:pointer;}
+.fa-eye{
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -25px;
+    cursor:pointer;}
+
+.fa-envelope{
+    position: absolute;
+    left: 5px;
+    cursor:pointer;
+}
+.fa-lock{
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    cursor:pointer;
+    font-size:15px;
 }
 
 h1{
@@ -35,7 +64,6 @@ h1{
     padding-bottom: 40px;
     font-weight: 400;
     color: #00302E;
-    ;
 }
 
 .btn-button1{
@@ -46,10 +74,6 @@ h1{
     display: inline;
 }
 
-a{
-    text-decoration: none;
-}
-
 .btn-color{
     background: #00302E;
     color: #fbddbb;
@@ -57,6 +81,21 @@ a{
     font-weight: 400;
 }
 
+.login-auth{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.login-link{
+    text-decoration: none;
+    color: #00302E;
+}
+
+.login-link:hover{
+    color: #fbddbb;
+}
 
 @media screen and (max-width: 680px) {
     .btn-button1{
@@ -64,7 +103,27 @@ a{
     }  
 
     .login-con2{
-        padding: 50px 80px 0px 80px;
-        }
+        padding: 0px 10px;
+        width: 350px;
+        margin-top: 30px;
+    }
+
+    .fa-eye-slash{
+        position: absolute;
+        margin-left: 300px;
+    }
+    .fa-eye{
+        position: absolute;
+        margin-left: 300px;
+    }
+
+    .login-img{
+        height: 500px;
+        width: 100%;
+    }
+
+    .login-form{
+        margin-bottom: 30px;
+    }
     
     }

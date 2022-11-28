@@ -1,48 +1,100 @@
-// import React, {useEffect} from 'react'
-// import React, {useState} from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Loginsignup.css';
 
 
 
 export default function Loginpage () {
 
-// useEffect(() => {
-//   alert('Welcome to FoodHub!')
-// }, [])
+ // Usestate for the login form
+
+ const{useState}=React;
+ const[inputtext,setinputtext]=useState({
+ email:"",
+ password:""
+ });
+ 
+ const[warnemail,setwarnemail]=useState(false);
+ const[warnpassword,setwarnpassword]=useState(false);
+ 
+ const[eye,seteye]=useState(true);
+ const[password,setpassword]=useState("password");
+ const[type,settype]=useState(false);
+ 
+ const inputEvent=(event)=>{
+ const name=event.target.name;
+ const value=event.target.value;
+ setinputtext((lastValue)=>{
+ return{
+ ...lastValue,
+ [name]:value
+ }
+ });
+ 
+ }
+ 
+ 
+ const submitForm=(e)=>{   
+ e.preventDefault();
+ setwarnemail(false);
+ setwarnpassword(false);
+ if(inputtext.email===""){
+ setwarnemail(true);
+ }
+ else if(inputtext.password===""){
+ setwarnpassword(true);
+ } 
+ else{
+ alert("form submitted"); 
+ }
+ 
+ }
+ 
+ const Eye=()=>{
+     if(password==="password"){
+         setpassword("text");
+         seteye(false);
+         settype(true);
+     }
+     else{
+         setpassword("password");
+         seteye(true);
+         settype(false);
+     }
+ }
 
 
   return (
    <div className='container1'>
       <div className='row row-con'>
         <div className='col-lg-6'>
-        <img className='login-img'  src='..\foodhub\Group 13.png' alt='Loginpage'/>
+        <img className='login-img img-fluid'  src='..\foodhub\Group 13.png' alt='Loginpage'/>
         </div>
 
-      <div className='col-lg-6'>
+      <div className='col-lg-6 login-con1'>
       <div className='login-con2'>
-
-      <div className='container1'>
 
       <h1 className=''>WELCOME BACK!</h1>
 
-  <form>
-  <div class="input-con">
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Your Email Address'/>
+  <form className='login-form'>
+  <div class="input-con" onSubmit={submitForm} >
+    <input type="text" className={` ${warnemail ? "warning active-input1" : "form-control" }`} placeholder="Enter your email" value={inputtext.email} onChange={inputEvent} name="email" />
   </div>
   <div class="input-con">
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder='Your Passord'/>
+    <input type={password} className={` ${warnpassword ? "warning" : "form-control" } ${type ? "type_password" : "" }`} placeholder="Enter your password" value={inputtext.password} onChange={inputEvent} name="password" />
+
+    <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye" }`}></i>
   </div>
 
   <button type="submit" class="btn btn-color form-control mb-3">Login</button>
 
-  <span>
-  <a className='' href='/#'><p>Create Account</p></a>
+  <span className='login-auth'>
+  <Link className='login-link' to='/sign-up'>Create Account</Link>
 
-<a  href='/#'><p className='pass'>Forgotten passord</p></a>
+  <Link className='login-link' to='/#'>Forget Password</Link>
   </span>
  
 </form>
-</div>
       </div>
     </div>
   </div>
@@ -51,5 +103,3 @@ export default function Loginpage () {
     
   )
 }
-
-// export default Loginpage
