@@ -4,9 +4,9 @@ import './App.css';
 
 import { Route, Routes} from "react-router-dom";
 import LandingPage from './components/LandingPage';
-import Loginpage from './components/Loginpage';
-import Signup from './components/Signup';
-import Orderpage1 from './components/Orderpage1';
+import Loginpage from './pages/Loginpage';
+import Signup from './pages/Signup';
+import Orderpage1 from './pages/Orderpage1';
 
 
 // import FunctionalComponent from './components/FunctionalComponent';

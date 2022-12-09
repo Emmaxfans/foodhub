@@ -96,6 +96,10 @@ export default function Signup () {
   <Link className='login-link' to='/Login'>You already have an account</Link>
   </center>
 
+  <center className='mt-3'>
+  You don't want to sign up?<Link className='login-link' to='/Order'>click here to make an order</Link>
+  </center>
+
 </form>
 </div>
       </div>

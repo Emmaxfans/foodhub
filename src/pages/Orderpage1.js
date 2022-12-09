@@ -1,7 +1,7 @@
 import React from 'react';
 import '../orderpage.css'
-import data from './Containerdata';
-import ContainerCard from './ContainerCard';
+import data from '../components/Containerdata';
+import ContainerCard from '../components/ContainerCard';
 
 
 export default function Orderpage1 () {
