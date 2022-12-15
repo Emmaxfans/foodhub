@@ -4,8 +4,40 @@ import FunctionalComponent, {FunctionalComponent2} from './FunctionalComponent';
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Nav from "./Nav";
+import { useState } from "react";
+
+// import axios from "axios";
 
 export default function LandingPage() {
+
+    // post request for email subscription
+
+    const [formemail, setFormemail] = useState("");
+
+const subscribeInput =(e) =>{
+    const { name,value }= e.target;
+    setFormemail({...formemail, [name]:value});
+    console.log(formemail);
+}
+
+const subscribe = async (e) =>{
+    e.preventDefault();
+    console.log(formemail);
+    // try{
+    //     const res= await axios.post('https://vendlify-api.onrender.com/api/v1/users/signup', formemail)
+    //     console.log(res)
+    //     if (res.status === 200){
+    //         document.getElementById("subscribe").innerHTML = "successfully subscribe"
+    //     }
+
+    //     else{
+    //         document.getElementById("submit").innerHTML = "Error can not subscribe"
+    //     }
+        
+    // }catch(err){
+
+    // }
+}
 
     return(
 
@@ -57,7 +89,7 @@ Special Meal Of The Day
 </div>
 
 <div class="col">
-<Link to='Order'>
+<Link to='Form'>
 <img className='img2 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 3.png' alt='foodhub2'/>
 </Link>
 <div className='con-center'>
@@ -85,7 +117,7 @@ Special Meal Of The Day
 <div className="col-6 con-mt1">
 
 <div className='con-b'>
-<h3 className=''>Get notified when we have Update!</h3>
+<h3 className=''>Get notified when we have Updates!</h3>
 <p className='ppp'>Get notified when we add new items to our special menu, <br/> update our price list of special promos!</p>
 </div>
 
@@ -95,8 +127,8 @@ Special Meal Of The Day
 <div class="col-6 func-con">
 
 <div class="">
-<form class="d-flex">
-<input class="form-control input-pro" type="search" placeholder="Search" aria-label="Search"/>
+<form class="d-flex" onSubmit={subscribe}>
+<input class="form-control input-pro" type="email" name="subscriber" value={subscribeInput.subscriber} onChange={subscribeInput} id="subscribe" placeholder="Email" aria-label="Search" />
 
 <FunctionalComponent />
 </form>

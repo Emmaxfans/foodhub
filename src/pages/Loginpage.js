@@ -72,12 +72,12 @@ export default function Loginpage () {
         </div>
 
       <div className='col-lg-6 login-con1'>
-      <div className='login-con2'>
+      <div className='login-con2x'>
 
-      <h1 className=''>WELCOME BACK!</h1>
+      <h1 className='h2-style'>WELCOME BACK!</h1>
 
-  <form className='login-form'>
-  <div class="input-con" onSubmit={submitForm} >
+  <form className='login-form' onSubmit={submitForm}>
+  <div class="input-con"  >
     <input type="text" className={` ${warnemail ? "warning active-input1" : "form-control" }`} placeholder="Enter your email" value={inputtext.email} onChange={inputEvent} name="email" />
   </div>
   <div class="input-con">

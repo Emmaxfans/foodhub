@@ -21,12 +21,12 @@ const Nav = ()=>{
           <li className="nav-item px-3">
             <Link to='/' className="nav-link active text-white fs-font" aria-current="page">Home</Link>
           </li>
-          <li className="nav-item px-3">
-          <Link  to='/Login' className="nav-link fs-font">Login</Link>
+          <li className="nav-item px-3 fs-font">
+          <Link  to='/Login' className="nav-link text-white">Login</Link>
           </li>
 
-          {/* <li className="nav-item px-3">
-          <Link  to='/Order' className="nav-link fs-font ">Order Now</Link>
+          {/* <li className="nav-item px-3  fs-font ">
+          <Link  to='/Order' className="nav-link text-white">Order Now</Link>
           </li> */}
         
           <li className="nav-item px-3 signup2">
