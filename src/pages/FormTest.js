@@ -102,8 +102,8 @@ const submitForm1 = async (e) =>{
     return(
 
     <div className="error container">
+      
         <form onSubmit={ submitForm1 }>
-
 
   <div className="mb-3">
     <label for="" class="form-label">Username</label>
