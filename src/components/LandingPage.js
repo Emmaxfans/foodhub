@@ -78,7 +78,7 @@ Special Meal Of The Day
 <div className="container">
 <div className="row align-items-start text-primary">
 <div className="col">
-<Link to='Order'>
+<Link to='order'>
 <img className='img2 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 2.png' alt='foodhub2'/>
 </Link>
 <div className='con-center'>
@@ -89,7 +89,7 @@ Special Meal Of The Day
 </div>
 
 <div class="col">
-<Link to='Form'>
+<Link to='form'>
 <img className='img2 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 3.png' alt='foodhub2'/>
 </Link>
 <div className='con-center'>
@@ -98,7 +98,7 @@ Special Meal Of The Day
 </div>
 </div>
 <div className="col">
-<Link to='Order'>
+<Link to='order'>
 <img className='img2 img-fluid' src='.\foodhub\bon-vivant-qom5MPOER-I-unsplash 4.png' alt='foodhub2'/>
 </Link>
 <div className='con-center'>

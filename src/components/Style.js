@@ -38,7 +38,7 @@ function Style () {
 
 <Link to='/'> <button> Home </button> </Link>
 <Link to='/about'> <button>About</button> </Link>
-<Link to='/Login' target="blank" rel=""><FunctionalComponent1/></Link>
+<Link to='/login' target="blank" rel=""><FunctionalComponent1/></Link>
 
 
 
