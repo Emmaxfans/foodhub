@@ -30,7 +30,7 @@ const submitForm1 = async (e) =>{
         const res= await axios.post('https://vendlify-api.onrender.com/api/v1/users/signup', formvalue, {article})
         console.log(res)
         if (res.status === 200){
-            window.location = "/login"
+            window.location = "/auth"
         }
 
         else{

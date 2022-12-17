@@ -1,9 +1,9 @@
 import React from "react";
 import '../App.css'
-import FunctionalComponent, {FunctionalComponent2} from './FunctionalComponent';
+import FunctionalComponent, {FunctionalComponent2} from '../components/FunctionalComponent';
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
-import Nav from "./Nav";
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 import { useState } from "react";
 
 // import axios from "axios";
