@@ -1,13 +1,21 @@
 import axios from "axios";
 // import React, { useEffect } from "react"
 import { useState } from "react";
+// import { Link } from "react-router-dom";
 import '../App.css'
+
 const FormTest = () =>{
 
     //  POST REQUEST FOR SIGN UP
 
 
 const [formvalue, setFormvalue] = useState({userName: "", email: "", phoneNumber: "", password: "", passwordConfirm: ""});
+
+const article  = {
+  'title': 'This is a test sign up',
+  'test-user': 'A test run sign up api via render hosting service'
+
+};
 
 const handleInput=(e) =>{
     const { name,value }= e.target;
@@ -19,7 +27,7 @@ const submitForm1 = async (e) =>{
     e.preventDefault();
     // console.log(formvalue);
     try{
-        const res= await axios.post('https://vendlify-api.onrender.com/api/v1/users/signup', formvalue)
+        const res= await axios.post('https://vendlify-api.onrender.com/api/v1/users/signup', formvalue, {article})
         console.log(res)
         if (res.status === 200){
             window.location = "/Auth"
@@ -33,6 +41,11 @@ const submitForm1 = async (e) =>{
 
     }
 }
+
+// Simple GET request using axios
+// const element = document.querySelector('#get-request .result');
+// axios.get('https://api.npms.io/v2/search?q=axios')
+//     .then(response => element.innerHTML = response.data.total);
 
 // POST USING AXIOS
 

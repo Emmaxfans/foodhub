@@ -61,51 +61,7 @@ export default function Signup () {
      }
  }
 
-     //  POST REQUEST FOR SIGN UP
-
-
-// const [inputtext, setinputtext] = useState({userName: "", email: "", phoneNumber: "", password: "", passwordConfirm: ""});
-
-// const inputEvent=(e) =>{
-//     const { name,value }= e.target;
-//     setFormvalue({...formvalue, [name]:value});
-//     console.log(formvalue);
-// }
-
-// const submitForm1 = async (e) =>{
-//     e.preventDefault();
-//     // console.log(formvalue);
-//     try{
-//         const res= await axios.post('https://vendlify-api.onrender.com/api/v1/users/signup', formvalue)
-//         console.log(res)
-//         if (res.status === 200){
-//             window.location = "/Auth"
-//         }
-
-//         else{
-//             document.getElementById("submit").innerHTML = "Error with sign up"
-//         }
-        
-//     }catch(err){
-
-//     }
-// }
-
-
-//  POST REQUEST FOR SIGN UP
-
-// const [username, setUsername] = useState('');
-// const [phoneno, setPhoneno] = useState('');
-// const [email, setEmail] = useState('');
-// const [password1, setpassword1] = useState('');
-// const [confirmpassword, setconfirmpassword] = useState('');
-
-// const submitForm = (e) => {
-   // setEmail, setPhoneno, setUsername, setpassword1, setconfirmpassword(e.target.value)
-//   e.preventDefault();
-//   addPosts(username, phoneno, email, password, confirmpassword );
-// };
-
+     
   return (
     <div className='container1'>
       <div className='row'>
