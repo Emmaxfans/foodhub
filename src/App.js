@@ -12,17 +12,18 @@ import FormTest from './pages/FormTest';
 import SignUpSuccess from './pages/SignUpSuccess';
 
 
+
 // import FunctionalComponent from './components/FunctionalComponent';
 
 function App() {
   return (
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        <Route path='/Login' element={<Loginpage />} />
-        <Route path='/Sign-Up' element={<Signup />} />
-        <Route path='/Order' element={<Orderpage1 />} />
-        <Route path='/Form' element={<FormTest />} />
-        <Route path='/Auth' element={<SignUpSuccess />} />
+        <Route path='/login' element={<Loginpage />} />
+        <Route path='/sign-Up' element={<Signup />} />
+        <Route path='/order' element={<Orderpage1 />} />
+        <Route path='/form' element={<FormTest />} />
+        <Route path='/auth' element={<SignUpSuccess />} />
         <Route path='*' element={<Error />} />
       </Routes>
 
