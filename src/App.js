@@ -7,6 +7,7 @@ import Orderpage1 from './pages/Orderpage1';
 import Error from './pages/Error';
 import FormTest from './pages/FormTest';
 import SignUpSuccess from './pages/SignUpSuccess';
+import Getpage from './pages/Getpage';
 
 
 function App() {
@@ -18,8 +19,12 @@ function App() {
         <Route path='/order' element={<Orderpage1 />} />
         <Route path='/form' element={<FormTest />} />
         <Route path='/auth' element={<SignUpSuccess />} />
+        <Route path='/get' element={<Getpage />} />
+
+
         <Route path='*' element={<Error />} />
       </Routes>
+      
 
   );
 }

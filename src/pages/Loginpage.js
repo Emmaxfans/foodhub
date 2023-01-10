@@ -6,62 +6,19 @@ import '../Loginsignup.css';
 
 export default function Loginpage () {
 
- // Usestate for the login form
-
- const{useState}=React;
- const[inputtext,setinputtext]=useState({
- email:"",
- password:""
- });
  
- const[warnemail,setwarnemail]=useState(false);
- const[warnpassword,setwarnpassword]=useState(false);
- 
- const[eye,seteye]=useState(true);
- const[password,setpassword]=useState("password");
- const[type,settype]=useState(false);
- 
- const inputEvent=(event)=>{
- const name=event.target.name;
- const value=event.target.value;
- setinputtext((lastValue)=>{
- return{
- ...lastValue,
- [name]:value
- }
- });
- 
- }
- 
- 
- const submitForm=(e)=>{   
- e.preventDefault();
- setwarnemail(false);
- setwarnpassword(false);
- if(inputtext.email===""){
- setwarnemail(true);
- }
- else if(inputtext.password===""){
- setwarnpassword(true);
- } 
- else{
- alert("form submitted"); 
- }
- 
- }
- 
- const Eye=()=>{
-     if(password==="password"){
-         setpassword("text");
-         seteye(false);
-         settype(true);
-     }
-     else{
-         setpassword("password");
-         seteye(true);
-         settype(false);
-     }
- }
+//  const Eye=()=>{
+//      if(password==="password"){
+//          setpassword("text");
+//          seteye(false);
+//          settype(true);
+//      }
+//      else{
+//          setpassword("password");
+//          seteye(true);
+//          settype(false);
+//      }
+//  }
 
 
   return (
@@ -76,17 +33,23 @@ export default function Loginpage () {
 
       <h1 className='h2-style'>WELCOME BACK!</h1>
 
-  <form className='login-form' onSubmit={submitForm}>
-  <div class="input-con"  >
-    <input type="text" className={` ${warnemail ? "warning active-input1" : "form-control" }`} placeholder="Enter your email" value={inputtext.email} onChange={inputEvent} name="email" />
-  </div>
-  <div class="input-con">
-    <input type={password} className={` ${warnpassword ? "warning" : "form-control" } ${type ? "type_password" : "" }`} placeholder="Enter your password" value={inputtext.password} onChange={inputEvent} name="password" />
+  <form className='login-form'>
 
-    <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye" }`}></i>
+<div class="input-con"  >
+    <input type="email" name="email" 
+    className="form-control" placeholder='Enter your email'/>
   </div>
 
-  <button type="submit" class="btn btn-color form-control mb-3">Login</button>
+  <div className='input-con'>
+
+  <input className='form-control' type='password' name='password'
+  placeholder='Password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+
+{/* <i  className={`fa "fa-eye-slash" : "fa-eye" }`}></i> */}
+  </div>
+
+  <button type="submit" class=" btn-color form-control ">Login</button>
 
   <span className='login-auth'>
   <Link className='login-link' to='/sign-up'>Create Account</Link>

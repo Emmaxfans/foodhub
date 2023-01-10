@@ -8,7 +8,7 @@ const SignUpSuccess = () => {
         <center>
         <h3 className='text-white'>Sign up successfully, confirm your email</h3>
 
-        <p><Link to='/Login'>click here to login</Link></p>
+        <p><Link to='/login'>click here to login</Link></p>
         </center>
     </div>
   )
