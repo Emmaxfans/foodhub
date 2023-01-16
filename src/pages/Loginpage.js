@@ -37,19 +37,27 @@ export default function Loginpage () {
 
 <div class="input-con"  >
     <input type="email" name="email" 
-    className="form-control" placeholder='Enter your email'/>
+    className="form-control" placeholder='Enter your email' required/>
   </div>
 
   <div className='input-con'>
 
-  <input className='form-control' type='password' name='password'
-  placeholder='Password' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
-  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required/>
+  <input className='form-control input-psw' 
+  type='password' name='password'
+  placeholder='Password' 
+  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  
+  required/>
+  <span className='error-psw'>
+  <p className='error-msg'>password must contain at least:</p> 
+  <li>one number</li>
+  <li>one uppercase lowercase letter</li>
+  <li>8 or more characters</li>
+  </span>
 
 {/* <i  className={`fa "fa-eye-slash" : "fa-eye" }`}></i> */}
   </div>
 
-  <button type="submit" class=" btn-color form-control ">Login</button>
+  <button type="submit" value= "submit" class=" btn-color form-control ">Login</button>
 
   <span className='login-auth'>
   <Link className='login-link' to='/sign-up'>Create Account</Link>

@@ -38,7 +38,7 @@ body{
 }
 
 .input-con{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .fa-eye-slash{
@@ -111,6 +111,39 @@ body{
 .login-link:hover{
     color: #fbddbb;
 }
+
+/* Password validation styling */
+
+.error-psw{
+    display: none;
+}
+
+.error-msg{
+    color: #ff0000;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+.li-msg{
+    display: none;
+    color: #ff0000;
+    font-size: 15px;
+}
+
+.input-psw:invalid:focus ~ .error-psw {
+    display: block;
+}
+
+::-ms-reveal{
+    display: none;
+}
+
+-webkit-reveal{
+    display: block;
+}
+
+
 
 @media screen and (max-width: 680px) {
     .btn-button1{
