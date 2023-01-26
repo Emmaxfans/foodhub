@@ -1,7 +1,8 @@
 import React from 'react'
-// import { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../Loginsignup.css';
+import axios from 'axios';
 
 export default function Signup () {
 
@@ -61,6 +62,33 @@ export default function Signup () {
 //      }
 //  }
 
+
+//  POST REQUEST FOR SIGN UP
+
+
+const [signup, setsignup] = useState({userName: "", email: "", phoneNumber: "", password: "", passwordConfirm: ""});
+
+const handleSignup=(e) =>{
+    const { name,value, }= e.target;
+    setsignup({...signup, [name]:value});
+    console.log(signup);
+}
+
+const submitSignup = async (e) =>{
+    e.preventDefault();
+    // console.log(formvalue);
+    try{
+        const res= await axios.post('https://vendlify-api.onrender.com/api/v1/users/signup', signup)
+        console.log(res)
+        if (res.status === 200){
+            window.location = "/auth"
+        } 
+    }catch{
+        alert("Error creating account!")
+    }
+    
+}
+
      
   return (
     <div className='container1'>
@@ -73,86 +101,45 @@ export default function Signup () {
       <div className='login-con2'>
       <h1 className='h1-style'>WELCOME FOODHUB!</h1>
 
-  {/* <form className='login-form' onSubmit={submitForm} >
-
-  <div class="input-con">
-    <input type="text" name='userName' class="form-control" 
-    id="" aria-describedby="emailHelp" placeholder='First Name' 
-    value={inputtext.userName} onChange={inputEvent} required/>
-  </div>
-
-  <div class="input-con">
-    <input type="text" name='phoneNumber' class="form-control" 
-   id='' aria-describedby="emailHelp" placeholder='Phone Number' required
-    value={inputtext.phoneNumber} onChange={inputEvent}/>
-  </div>
-    
-  <div class="input-con"  >
-    <input type="email" className={` ${warnemail ? 
-      "warning active-input1" : "form-control" }`} placeholder="Enter your email" 
-      value={inputtext.email} onChange={inputEvent} name="email" />
-  </div>
-
-
-  <div class="input-con">
-    <input type={password} name='password' className={` ${warnpassword ? "warning" : "form-control" } ${type ? "type_password" : "" }`} placeholder="password" value={inputtext.password} onChange={inputEvent} required/>
-    <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye" }`}></i>
-  </div>
-
-  <div class="input-con">
-    <input type="text" name='passwordConfirm' className='form-control warning' placeholder='confirm password'  value={inputtext.passwordConfirm} onChange={inputEvent} required/>
-    <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye" }`}></i>
-  </div>
-
-  <button type="submit" class="btn btn-color form-control mb-3" id='signup' >Sign up</button>
-
-  <center className='mt-3'>
-  <Link className='login-link' to='/Login'>You already have an account</Link>
-  </center>
-
-  <center className='mt-3'>
-  You don't want to sign up?<Link className='login-link' to='/Order'>click here to make an order</Link>
-  </center>
-
-</form> */}
-
 {/* NEW SIGN UP FORM  */}
 
-<form className='login-form'>
+<form className='login-form' onSubmit={submitSignup}>
 
   <div class="input-con">
-    <input type="text" name='userName' class="form-control" 
+    <input value={signup.userName} onChange={handleSignup} type="text" name='userName' class="form-control" 
     id="" aria-describedby="" placeholder='First Name' required/>
   </div>
 
   <div class="input-con">
-    <input type="text" name='phoneNumber' class="form-control" 
+    <input value={signup.phoneNumber} onChange={handleSignup} type="text" name='phoneNumber' class="form-control" 
    id='' aria-describedby="" placeholder='Phone Number' required/>
   </div>
     
   <div class="input-con"  >
-    <input type="email" className="form-control" placeholder="Enter your email" name="email" required />
+    <input value={signup.email} onChange={handleSignup} type="email" className="form-control" placeholder="Enter your email" name="email" required />
   </div>
 
 
   <div class="input-con">
-    <input className="form-control  input-psw" type="password" name='password'  placeholder="password" 
+    <input value={signup.password} onChange={handleSignup} className="form-control  input-psw" type="password" name='password'  placeholder="password"
     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required/>
+    <i className="fa fa-eye-slash fa-eye" id="Eye" ></i>
     <span className='error-psw'>
       <p className='error-msg'>password must contain at least:</p> 
         <li>one number</li>
         <li>one uppercase lowercase letter</li>
         <li>8 or more characters</li>
     </span>
-    {/* <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye" }`}></i> */}
+    
   </div>
 
   <div class="input-con">
-    <input type="password" name='passwordConfirm' className='form-control' placeholder='confirm password' required/>
+    <input value={signup.passwordConfirm} onChange={handleSignup} type="password" name='passwordConfirm' className='form-control' placeholder='confirm password' required/>
+    <i className="fa fa-eye-slash fa-eye" id="Eye" ></i>
     {/* <i onClick={Eye} className={`fa ${eye ? "fa-eye-slash" : "fa-eye" }`}></i> */}
   </div>
 
-  <button type="submit" class="btn btn-color form-control mb-3" id='signup' >Sign up</button>
+  <button type="submit"  id='signup' class="btn btn-color form-control mb-3" >Sign up</button>
 
   <center className='mt-3'>
   <Link className='login-link' to='/Login'>You already have an account</Link>
@@ -163,15 +150,10 @@ export default function Signup () {
   </center>
 
 </form>
-
-
-
-
-
 </div>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</div>
    
     
   );

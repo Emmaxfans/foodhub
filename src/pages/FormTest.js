@@ -29,14 +29,9 @@ const submitForm1 = async (e) =>{
         console.log(res)
         if (res.status === 200){
             window.location = "/auth"
-        }
-
-        else{
-            document.getElementById("submit").innerHTML = "Error with sign up"
-        }
-        
-    }catch(err){
-
+        } 
+    }catch{
+        // alert("Error creating account!")
     }
     
 }

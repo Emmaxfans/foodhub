@@ -1,10 +1,35 @@
-import React from 'react';
+import axios from 'axios';
+// import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Loginsignup.css';
+import { useState } from 'react';
 
 
 
 export default function Loginpage () {
+
+  const [login, setlogin] = useState({email: "", password: ""});
+
+const handleLogin=(e) =>{
+    const { name,value, }= e.target;
+    setlogin({...login, [name]:value});
+    console.log(login);
+}
+
+const submitLogin = async (e) =>{
+    e.preventDefault();
+    // console.log(login);
+    try{
+        const res= await axios.post('https://vendlify-api.onrender.com/api/v1/users/login', login)
+        console.log(res)
+        if (res.status === 200){
+            window.location = "/order"
+        } 
+    }catch{
+        // alert("Error signing in!")
+    }
+
+  }
 
  
 //  const Eye=()=>{
@@ -31,18 +56,20 @@ export default function Loginpage () {
       <div className='col-lg-6 login-con1'>
       <div className='login-con2x'>
 
+        <Link to="/">Back</Link>
+
       <h1 className='h2-style'>WELCOME BACK!</h1>
 
-  <form className='login-form'>
+  <form className='login-form' onChange={ submitLogin }>
 
 <div class="input-con"  >
-    <input type="email" name="email" 
+    <input onChange={handleLogin} value={login.email} type="email" name="email" 
     className="form-control" placeholder='Enter your email' required/>
   </div>
 
   <div className='input-con'>
 
-  <input className='form-control input-psw' 
+  <input onChange={handleLogin} value={login.password} className='form-control input-psw' 
   type='password' name='password'
   placeholder='Password' 
   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  
@@ -57,7 +84,7 @@ export default function Loginpage () {
 {/* <i  className={`fa "fa-eye-slash" : "fa-eye" }`}></i> */}
   </div>
 
-  <button type="submit" value= "submit" class=" btn-color form-control ">Login</button>
+  <button type="submit" id='submit' class=" btn-color form-control ">Login</button>
 
   <span className='login-auth'>
   <Link className='login-link' to='/sign-up'>Create Account</Link>
