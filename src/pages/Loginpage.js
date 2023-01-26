@@ -52,11 +52,9 @@ const submitLogin = async (e) =>{
         <div className='col-lg-6'>
         <img className='login-img img-fluid'  src='..\foodhub\Group 13.png' alt='Loginpage'/>
         </div>
-
       <div className='col-lg-6 login-con1'>
+      <Link to="/" className='login-back'>Back >>></Link>
       <div className='login-con2x'>
-
-        <Link to="/">Back</Link>
 
       <h1 className='h2-style'>WELCOME BACK!</h1>
 

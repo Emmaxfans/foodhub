@@ -143,6 +143,19 @@ body{
     display: block;
 }
 
+.login-back{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.login-back:hover{
+    color: #fbddbb;
+}
+
 
 
 @media screen and (max-width: 680px) {
@@ -178,6 +191,10 @@ body{
 
     .login-form{
         margin-bottom: 30px;
+    }
+
+    .login-back{
+        display: none;
     }
     
     }
